@@ -1,0 +1,244 @@
+// in terminal put: sass --watch scss:compiled
+
+// variables
+
+$colour-1: #8c8383;
+$colour-2: #d7d7d7;
+
+
+.navbar {
+  background-color: $colour-1;
+}
+
+.navbar-brand {
+  text-align: center;
+}
+
+.navbar-nav {
+  // position: absolute;
+}
+
+.logo {
+  width:10%;
+  height:10%;
+}
+
+
+
+
+// my custom styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+// .footer {
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   /* Set the fixed height of the footer here */
+//   height: 60px;
+//   line-height: 60px; /* Vertically center the text there */
+//   background-color: #f5f5f5;
+// }
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body {
+  padding-top: 55px;
+}
+
+body > .container {
+  padding: 80px 15px 0;
+}
+
+// .footer > .container {
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
+
+// BANNER SECTION
+
+#banner {
+  background-color: $colour-2;
+  min-height:60vh;
+  margin-bottom: 10vh;
+
+  button {
+    width:110px;
+    margin:10px;
+    cursor: pointer;
+  }
+
+  // .button-container {
+  //   padding-top: 60px;
+  // }
+
+  .btn-group-vertical {
+    padding-top: 90px;
+
+  }
+
+  .main-banner {
+
+    h2:first-child {
+      padding-top:10vh;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+}
+
+// END BANNER SECTION
+
+// BROWSE SECTION
+
+#browse {
+  // background-color: $colour-2;
+  min-height:75vh;
+
+  h3 {
+    padding-top: 20px;
+    padding-left: 75px;
+  }
+
+  h5,p {
+    color:black;
+  }
+
+  .col-sm {
+    text-align: center;
+    min-height:60vh;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .row {
+    margin-top:30px;
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+
+}
+
+// END BROWSE SECTION
+
+// BLOG BANNER IMAGE WITH TEXT CLASSES
+
+.image-container {
+  position: relative;
+  margin-bottom:20px;
+}
+
+.big-image {
+  max-height:60vh;
+  min-width:100%;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+
+.image-headline {
+  color:white;
+  font-size:6vw;
+}
+
+
+
+// INFO SECTION
+
+#info {
+  margin-top: 15px;
+
+  .row {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  .info-text {
+    margin-top:20px;
+  }
+
+}
+
+// END INFO SECTION
+
+// SIGN UP SECTION
+
+#sign-up {
+  margin-top:20px;
+
+  p {
+    width:300px;
+    margin-top:10px;
+  }
+
+  button {
+    margin-top:10px;
+  }
+
+}
+
+#blog-post {
+  margin-bottom:70px;
+}
+
+// LOGO SECTION
+
+#logos {
+
+  position: relative;
+  top:-40px;
+
+  .row {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+
+  img {
+    width:120px;
+    height:120px;
+    margin:0 80px 0 80px;
+  }
+
+
+}
+
+
+
+
+
+//  media queries
+
+@media (max-width: 576px) {
+
+  #info {
+
+    .row {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  // #logos {
+  //   .row {
+  //     margin-right: 50vw;
+  //     // margin-left: 50%;
+  //   }
+  // }
+
+}
