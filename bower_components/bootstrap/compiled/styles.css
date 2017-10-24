@@ -131,12 +131,15 @@ body > .container {
     font-size: 100%;
     transition: all .5s ease; }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .footer a {
-    font-size: 70%; } }
+    font-size: 60%; } }
 @media (max-width: 576px) {
   #info .row {
     margin-right: 10px;
-    margin-left: 10px; } }
+    margin-left: 10px; }
+
+  .footer a {
+    font-size: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */

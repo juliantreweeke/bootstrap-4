@@ -62,8 +62,6 @@ body > .container {
   padding: 80px 15px 0;
 }
 
-
-
 // BANNER SECTION
 
 #banner {
@@ -79,9 +77,6 @@ body > .container {
     cursor: pointer;
   }
 
-  // .button-container {
-  //   padding-top: 60px;
-  // }
 
   .btn-group-vertical {
     padding-top: 90px;
@@ -251,16 +246,31 @@ body > .container {
 // media queries
 
 // iphone-5 and small phones
-@media (max-width: 320px) {
+
+
+// @media (max-width: 525px) {
+//
+//   .footer {
+//
+//     a {
+//       font-size:60%;
+//     }
+//   }
+//
+// }
+
+@media (max-width: 375px) {
 
   .footer {
 
     a {
-      font-size:70%;
+      font-size:60%;
     }
   }
 
 }
+
+
 
 @media (max-width: 576px) {
 
@@ -269,6 +279,13 @@ body > .container {
     .row {
       margin-right: 10px;
       margin-left: 10px;
+    }
+  }
+
+  .footer {
+
+    a {
+      font-size:70%;
     }
   }
 
