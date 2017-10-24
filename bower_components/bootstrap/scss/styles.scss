@@ -24,9 +24,16 @@ $colour-2: #d7d7d7;
 }
 
 
+// GLOBAL STYES
 
+a {
+  color:black;
+}
 
-// my custom styles
+a:hover {
+  color:blue;
+  text-decoration: none;
+}
 
 html {
   position: relative;
@@ -34,17 +41,10 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+
 }
-// .footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   /* Set the fixed height of the footer here */
-//   height: 60px;
-//   line-height: 60px; /* Vertically center the text there */
-//   background-color: #f5f5f5;
-// }
+
 
 
 /* Custom page CSS
@@ -59,10 +59,7 @@ body > .container {
   padding: 80px 15px 0;
 }
 
-// .footer > .container {
-//   padding-right: 15px;
-//   padding-left: 15px;
-// }
+
 
 // BANNER SECTION
 
@@ -72,7 +69,7 @@ body > .container {
   margin-bottom: 10vh;
 
   button {
-    width:110px;
+    width:130px;
     margin:10px;
     cursor: pointer;
   }
@@ -200,29 +197,84 @@ body > .container {
 // LOGO SECTION
 
 #logos {
-
+  min-height:10vh;
   position: relative;
   top:-40px;
 
   .row {
-    margin-right: 150px;
-    margin-left: 150px;
+    // margin-right: 150px;
+    // margin-left: 150px;
+    // margin-right: 20%;
+    // margin-left: 20vw;
   }
 
   img {
-    width:120px;
-    height:120px;
-    margin:0 80px 0 80px;
+    width:80px;
+    height:80px;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
 
 }
+
+// footer section
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 80px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: $colour-1;
+
+  .fa,a {
+    margin:25px 1vw 0 1vw;
+  }
+
+  a {
+  font-size: 65%;
+  // padding: 10px 20px 10px 40px;
+  transition: all .5s ease;
+  }
+
+
+
+
+
+
+  // li {
+  //   margin:0 10px 0 10px;
+  // }
+}
+
+// .footer > .container {
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
 
 
 
 
 
 //  media queries
+
+
+// @media (max-width: 776px) {
+//
+//   #logos {
+//     img {
+//       margin:10px;
+//     }
+//
+//     .row {
+//       margin:0px;
+//     }
+//   }
+// }
+
+
+
 
 @media (max-width: 576px) {
 
@@ -233,12 +285,5 @@ body > .container {
       margin-left: 10px;
     }
   }
-
-  // #logos {
-  //   .row {
-  //     margin-right: 50vw;
-  //     // margin-left: 50%;
-  //   }
-  // }
 
 }
