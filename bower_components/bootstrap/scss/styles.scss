@@ -26,6 +26,17 @@ $colour-2: #d7d7d7;
 
 // GLOBAL STYES
 
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+}
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 a {
   color:black;
 }
@@ -49,6 +60,45 @@ body {
   color:white;
 }
 
+.feature-image {
+  display:table;
+	width: 100%;
+}
+
+.feature-image-default {
+	background: url('../../../img/blog.jpg') no-repeat;
+	background-size:cover;
+}
+
+.feature-image-default-alt {
+	background: url('../../../img/largesoap.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image h1 {
+  font-size:5vw;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+}
+
+.big-image {
+  min-height:50vh;
+}
+
+.slim-image {
+  min-height:30vh;
+}
+
+section {
+	padding: 20px 0;
+}
+
+.pad-top {
+  padding-top:60px;
+}
+
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -69,7 +119,7 @@ body > .container {
   background-image: url('../../../img/background.jpg');
   background-size: cover;
   min-height:60vh;
-  margin-bottom: 10vh;
+  // margin-bottom: 10vh;
 
   button {
     width:130px;
@@ -120,6 +170,11 @@ body > .container {
     margin-left: 15px;
   }
 
+  img:hover {
+    border:black 2px solid;
+    cursor: pointer;
+  }
+
   .row {
     margin-top:30px;
     margin-right: 45px;
@@ -130,36 +185,14 @@ body > .container {
 
 // END BROWSE SECTION
 
-// BLOG BANNER IMAGE WITH TEXT CLASSES
 
-.image-container {
-  position: relative;
-  margin-bottom:20px;
-}
-
-.big-image {
-  max-height:60vh;
-  min-width:100%;
-}
-
-.caption {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  width: 100%;
-}
-
-.image-headline {
-  color:white;
-  font-size:6vw;
-}
 
 
 
 // INFO SECTION
 
 #info {
-  margin-top: 15px;
+  // margin-top: 15px;
 
   .row {
     margin-right: 150px;
@@ -177,7 +210,7 @@ body > .container {
 // SIGN UP SECTION
 
 #sign-up {
-  margin-top:20px;
+  // margin-top:20px;
 
   p {
     width:300px;
@@ -241,23 +274,67 @@ body > .container {
 
 }
 
+// BLOG PAGE SECTION
+.blog-page {
+
+  .container {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .post {
+    // max-width:70vw;
+    min-width:30vw;
+    border-radius:6px;
+    position:relative;
+	  border: solid 3px $colour-1;
+    padding:10px;
+  }
+
+  // .post-image {
+  //   min-height:10%;
+  // 	// height: 20px;
+  // 	// min-width: 40vw;
+  // }
+
+  a:hover {
+    color:$colour-1;
+  }
+
+  .post-details {
+	font-size: 12px;
+  }
+
+  .post-excerpt {
+    // width:70%;
+  }
+
+  // p {
+  //   text-align: center;
+  //   max-width:300px;
+  // }
+
+
+
+  img {
+    border-radius:4px;
+    max-width:85vw;
+    height:40vh;
+  }
+
+}
+
+
+
+
+
 
 
 // media queries
 
-// iphone-5 and small phones
-
-
-// @media (max-width: 525px) {
-//
-//   .footer {
-//
-//     a {
-//       font-size:60%;
-//     }
-//   }
-//
-// }
+// iphone 6 to 5 and small phones
 
 @media (max-width: 375px) {
 
@@ -269,8 +346,6 @@ body > .container {
   }
 
 }
-
-
 
 @media (max-width: 576px) {
 
