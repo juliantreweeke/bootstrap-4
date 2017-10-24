@@ -12,7 +12,7 @@ a {
   color: black; }
 
 a:hover {
-  color: blue;
+  color: white;
   text-decoration: none; }
 
 html {
@@ -22,6 +22,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 80px; }
+
+.btn-secondary {
+  background-color: #8c8383;
+  color: white; }
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -33,7 +37,8 @@ body > .container {
   padding: 80px 15px 0; }
 
 #banner {
-  background-color: #d7d7d7;
+  background-image: url("../../../img/background.jpg");
+  background-size: cover;
   min-height: 60vh;
   margin-bottom: 10vh; }
   #banner button {
@@ -96,7 +101,8 @@ body > .container {
     width: 300px;
     margin-top: 10px; }
   #sign-up button {
-    margin-top: 10px; }
+    margin-top: 10px;
+    width: 130px; }
 
 #blog-post {
   margin-bottom: 70px; }
@@ -122,9 +128,12 @@ body > .container {
   .footer .fa, .footer a {
     margin: 25px 1vw 0 1vw; }
   .footer a {
-    font-size: 65%;
+    font-size: 100%;
     transition: all .5s ease; }
 
+@media (max-width: 320px) {
+  .footer a {
+    font-size: 70%; } }
 @media (max-width: 576px) {
   #info .row {
     margin-right: 10px;

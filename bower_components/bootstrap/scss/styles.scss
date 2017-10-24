@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color:blue;
+  color:white;
   text-decoration: none;
 }
 
@@ -42,9 +42,12 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 80px;
-
 }
 
+.btn-secondary {
+  background-color: $colour-1;
+  color:white;
+}
 
 
 /* Custom page CSS
@@ -64,7 +67,9 @@ body > .container {
 // BANNER SECTION
 
 #banner {
-  background-color: $colour-2;
+  // background-color: $colour-2;
+  background-image: url('../../../img/background.jpg');
+  background-size: cover;
   min-height:60vh;
   margin-bottom: 10vh;
 
@@ -186,6 +191,7 @@ body > .container {
 
   button {
     margin-top:10px;
+    width:130px;
   }
 
 }
@@ -233,48 +239,28 @@ body > .container {
   }
 
   a {
-  font-size: 65%;
+  font-size: 100%;
   // padding: 10px 20px 10px 40px;
   transition: all .5s ease;
   }
 
-
-
-
-
-
-  // li {
-  //   margin:0 10px 0 10px;
-  // }
 }
 
-// .footer > .container {
-//   padding-right: 15px;
-//   padding-left: 15px;
-// }
 
 
+// media queries
 
+// iphone-5 and small phones
+@media (max-width: 320px) {
 
+  .footer {
 
-//  media queries
+    a {
+      font-size:70%;
+    }
+  }
 
-
-// @media (max-width: 776px) {
-//
-//   #logos {
-//     img {
-//       margin:10px;
-//     }
-//
-//     .row {
-//       margin:0px;
-//     }
-//   }
-// }
-
-
-
+}
 
 @media (max-width: 576px) {
 
