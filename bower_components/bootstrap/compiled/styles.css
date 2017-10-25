@@ -1,0 +1,188 @@
+.navbar {
+  min-width: 100vw;
+  background-color: #8c8383; }
+
+.navbar-brand {
+  text-align: center; }
+
+.logo {
+  width: 10%;
+  height: 10%; }
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-weight: bold; }
+
+.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+a {
+  color: black; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+  background: url("../../../img/tile.jpg") top left repeat; }
+
+.btn-secondary {
+  background-color: #8c8383;
+  color: white; }
+
+.feature-image {
+  display: table;
+  min-width: 100vw; }
+
+.feature-image-default {
+  background: url("../../../img/blog.jpg") no-repeat;
+  background-size: cover; }
+
+.feature-image-default-alt {
+  background: url("../../../img/largesoap.jpg") no-repeat;
+  background-size: cover; }
+
+.feature-image h1 {
+  font-size: 5vw;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white; }
+
+.big-image {
+  min-height: 50vh; }
+
+.slim-image {
+  min-height: 30vh; }
+
+section {
+  padding: 20px 0; }
+
+.pad-top {
+  padding-top: 60px; }
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body {
+  padding-top: 55px; }
+
+body > .container {
+  padding: 80px 15px 0; }
+
+#banner {
+  background-image: url("../../../img/background.jpg");
+  background-size: cover;
+  min-height: 60vh; }
+  #banner button {
+    width: 130px;
+    margin: 10px;
+    cursor: pointer; }
+  #banner .btn-group-vertical {
+    padding-top: 90px; }
+  #banner .main-banner h2:first-child {
+    padding-top: 10vh; }
+  #banner .main-banner h2 {
+    text-align: center; }
+
+#browse {
+  min-height: 75vh; }
+  #browse h3 {
+    padding-top: 20px;
+    padding-left: 75px; }
+  #browse h5, #browse p {
+    color: black; }
+  #browse .col-sm {
+    text-align: center;
+    min-height: 60vh;
+    margin-right: 15px;
+    margin-left: 15px; }
+  #browse img:hover {
+    border: black 2px solid;
+    cursor: pointer; }
+  #browse .row {
+    margin-top: 30px;
+    margin-right: 45px;
+    margin-left: 45px; }
+
+#info .row {
+  margin-right: 150px;
+  margin-left: 150px; }
+#info .info-text {
+  margin-top: 20px; }
+
+#sign-up p {
+  width: 300px;
+  margin-top: 10px; }
+#sign-up button {
+  margin-top: 10px;
+  width: 130px; }
+
+#blog-post {
+  margin-bottom: 70px; }
+
+#logos {
+  min-height: 10vh;
+  position: relative;
+  top: -40px; }
+  #logos img {
+    width: 80px;
+    height: 80px;
+    margin-left: 5vw;
+    margin-right: 5vw; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 80px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #8c8383; }
+  .footer .fa, .footer a {
+    margin: 25px 1vw 0 1vw; }
+  .footer a {
+    font-size: 100%;
+    transition: all .5s ease; }
+
+.blog-page .container {
+  max-width: 50%;
+  margin-bottom: 20px;
+  background-color: white;
+  border: solid 3px #8c8383;
+  border-radius: 6px; }
+.blog-page .post {
+  position: relative;
+  padding: 10px; }
+.blog-page a:hover {
+  color: #8c8383; }
+.blog-page .post-details {
+  font-size: 12px; }
+.blog-page img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px; }
+
+@media (max-width: 375px) {
+  .footer a {
+    font-size: 60%; } }
+@media (max-width: 576px) {
+  #info .row {
+    margin-right: 10px;
+    margin-left: 10px; }
+
+  .footer a {
+    font-size: 70%; }
+
+  .blog-page .container {
+    max-width: 80%; } }
+
+/*# sourceMappingURL=styles.css.map */

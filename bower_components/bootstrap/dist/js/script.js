@@ -13,6 +13,12 @@ $( document ).ready(function() {
 	// Tutorial: http://code.tutsplus.com/tutorials/a-simple-parallax-scrolling-technique--net-27641
 
 	$('section[data-type="background"]').each(function(){
+    // disable parallax if on mobile browser...
+    // will attempt to fix this later
+    if ($(window).width() <= 900){
+      return;
+    }
+
 		var $bgobj = $(this); // assigning the object
 
 		$(window).scroll(function() {
