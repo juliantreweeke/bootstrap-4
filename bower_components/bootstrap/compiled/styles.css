@@ -153,6 +153,8 @@ body > .container {
     font-size: 100%;
     transition: all .5s ease; }
 
+.blog-page .post-excerpt {
+  margin-top: 20px; }
 .blog-page .container {
   max-width: 50%;
   margin-bottom: 20px;
