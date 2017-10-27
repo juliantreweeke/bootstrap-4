@@ -11,8 +11,10 @@ $colour-2: #d7d7d7;
   background-color: $colour-1;
 }
 
+
 .navbar-brand {
-  text-align: center;
+  margin-left:20px;
+  // text-align: center;
 }
 
 .navbar-nav {
@@ -101,6 +103,12 @@ section {
 .pad-top {
   padding-top:60px;
 }
+
+// FORMS
+
+// input,textarea {
+//   // width:100%;
+// }
 
 
 /* Custom page CSS
@@ -216,7 +224,8 @@ body > .container {
   // margin-top:20px;
 
   p {
-    width:300px;
+    text-align: center;
+    width:310px;
     margin-top:10px;
   }
 
@@ -236,7 +245,7 @@ body > .container {
 #logos {
   min-height:10vh;
   position: relative;
-  top:-40px;
+  // top:-40px;
 
   .row {
     // margin-right: 150px;
@@ -335,9 +344,33 @@ body > .container {
     height:150px;
   }
 
+}
 
+#contact {
+	padding: 40px 0;
 
+  input[type="submit"]
+  {
+	display: inline-block;
+	margin-bottom: 0;
+	// font-size: 18px;
 
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	border-radius: 6px;
+  }
+
+}
+
+#about {
+
+  img {
+    padding: 20px;
+  }
 
 }
 

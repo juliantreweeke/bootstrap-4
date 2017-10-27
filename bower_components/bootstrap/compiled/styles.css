@@ -3,7 +3,7 @@
   background-color: #8c8383; }
 
 .navbar-brand {
-  text-align: center; }
+  margin-left: 20px; }
 
 .logo {
   width: 10%;
@@ -120,7 +120,8 @@ body > .container {
   margin-top: 20px; }
 
 #sign-up p {
-  width: 300px;
+  text-align: center;
+  width: 310px;
   margin-top: 10px; }
 #sign-up button {
   margin-top: 10px;
@@ -131,8 +132,7 @@ body > .container {
 
 #logos {
   min-height: 10vh;
-  position: relative;
-  top: -40px; }
+  position: relative; }
   #logos img {
     width: 80px;
     height: 80px;
@@ -187,6 +187,22 @@ body > .container {
 .blog-page #comment {
   width: 100%;
   height: 150px; }
+
+#contact {
+  padding: 40px 0; }
+  #contact input[type="submit"] {
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.33;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px; }
+
+#about img {
+  padding: 20px; }
 
 @media (max-width: 375px) {
   .footer a {
